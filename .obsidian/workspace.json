@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "额外编写文档/txv.core重构计划.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "额外编写文档/txv.core重构计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
+                "file": "额外编写文档/txv.core重构计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "额外编写文档/txv.core重构计划.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "78a3a061a5d5de7f",
   "lastOpenFiles": [
-    "pull.md",
     "readme.md",
+    "pull.md",
     "额外编写文档/txv.core重构计划.md",
     "额外编写文档/2023线上问题复盘.md",
     "工作笔记/技术外.md",
