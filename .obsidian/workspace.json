@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作笔记/可以做的事（号答辩）.md",
+                "file": "工作笔记/技术外.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#3、",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作笔记/可以做的事（号答辩）.md",
+                "file": "工作笔记/技术外.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作笔记/可以做的事（号答辩）.md",
+                "file": "工作笔记/技术外.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作笔记/可以做的事（号答辩）.md"
+                "file": "工作笔记/技术外.md"
               }
             }
           }
@@ -160,9 +161,9 @@
   },
   "active": "7d645dc8be91cacc",
   "lastOpenFiles": [
-    "前端面试/VUE.md",
-    "工作笔记/可以做的事（号答辩）.md",
+    "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
+    "前端面试/VUE.md",
     "额外编写文档/txv.core重构计划.md",
     "额外编写文档/2023线上问题复盘.md",
     "工作业务重点、难点/txv.core登陆架构.md",
