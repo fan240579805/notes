@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/腾讯视频官网性能优化.md",
+                "file": "工作业务重点、难点/SSR相关实战.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/腾讯视频官网性能优化.md",
+                "file": "工作业务重点、难点/SSR相关实战.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/腾讯视频官网性能优化.md",
+                "file": "工作业务重点、难点/SSR相关实战.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/腾讯视频官网性能优化.md"
+                "file": "工作业务重点、难点/SSR相关实战.md"
               }
             }
           }
@@ -148,16 +148,16 @@
   },
   "active": "7d645dc8be91cacc",
   "lastOpenFiles": [
-    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
-    "工作业务重点、难点/腾讯视频官网性能优化.md",
+    "工作业务重点、难点/SEO.md",
     "工作业务重点、难点/js灰度、版控.md",
+    "工作业务重点、难点/弹幕.md",
+    "工作业务重点、难点/腾讯视频官网性能优化.md",
+    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "前端面试/性能优化.md",
     "工作业务重点、难点/大仓相关.md",
     "工作笔记/可以做的事（好答辩）.md",
-    "工作业务重点、难点/SEO.md",
     "工作业务重点、难点/SSR相关实战.md",
     "工作业务重点、难点/txv.core登陆架构.md",
-    "工作业务重点、难点/弹幕.md",
     "工作业务重点、难点/打包构建相关.md",
     "前端面试/面试不会的题.md",
     "前端面试/网络方面.md",
