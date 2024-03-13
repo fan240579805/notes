@@ -1,5 +1,7 @@
 
 >SSR（Server-Side Rendering，服务器端渲染）和 SSG（Static Site Generation，静态站点生成）都是解决单页面应用（SPA）中 SEO 和首屏加载速度问题的方法。
+>[SSR vs SSG](https://juejin.cn/post/7233699680490799162)
+
 
 
 #### 1. 设计架构图
