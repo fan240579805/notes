@@ -11,13 +11,28 @@
             "id": "ea598a56efe7c820",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "design.png"
+                "file": "工作笔记/技术外.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4ee53790398a243",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "额外编写文档/2023线上问题复盘.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design.png",
+                "file": "额外编写文档/2023线上问题复盘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design.png",
+                "file": "额外编写文档/2023线上问题复盘.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design.png"
+                "file": "额外编写文档/2023线上问题复盘.md"
               }
             }
           }
@@ -145,23 +160,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea598a56efe7c820",
+  "active": "a4ee53790398a243",
   "lastOpenFiles": [
+    "工作笔记/技术外.md",
+    "额外编写文档/2023线上问题复盘.md",
+    "工作笔记/可以做的事（好答辩）.md",
+    "工作业务重点、难点/打包构建相关.md",
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
+    "工作业务重点、难点/大仓相关.md",
+    "工作业务重点、难点/V站性能优化.md",
+    "工作业务重点、难点/js灰度、版控.md",
+    "工作业务重点、难点/弹幕.md",
+    "design.png",
     "readme.md",
     "额外编写文档/txv.core重构计划.md",
-    "额外编写文档/2023线上问题复盘.md",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
-    "工作业务重点、难点/V站性能优化.md",
-    "design.png",
     "工作业务重点、难点/txv.core登陆架构.md",
-    "工作业务重点、难点/弹幕.md",
     "工作业务重点、难点/SEO.md",
-    "工作业务重点、难点/js灰度、版控.md",
-    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
-    "工作业务重点、难点/打包构建相关.md",
-    "工作笔记/技术外.md",
-    "工作笔记/可以做的事（好答辩）.md",
-    "工作业务重点、难点/大仓相关.md",
     "前端面试/性能优化.md",
     "前端面试/面试不会的题.md",
     "前端面试/网络方面.md",
