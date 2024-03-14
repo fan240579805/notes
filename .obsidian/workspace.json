@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f4cf768b1ff67427",
+        "id": "3445a23c29c2fe48",
         "type": "tabs",
         "children": [
           {
-            "id": "ea598a56efe7c820",
+            "id": "a040f45a83b7ce0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,10 +139,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea598a56efe7c820",
+  "active": "a040f45a83b7ce0c",
   "lastOpenFiles": [
-    "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/js灰度、版控.md",
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/大仓相关.md",
