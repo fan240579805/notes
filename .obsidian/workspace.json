@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5fcd316a579cbf79",
+        "id": "7ab65e6a2ce55ee6",
         "type": "tabs",
         "children": [
           {
-            "id": "0e72fac276797288",
+            "id": "3a8d83ac680dcb20",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,8 +139,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0e72fac276797288",
+  "active": "3a8d83ac680dcb20",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/SEO.md",
