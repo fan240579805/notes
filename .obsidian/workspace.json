@@ -11,8 +11,12 @@
             "id": "3a8d83ac680dcb20",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md"
+              }
             }
           }
         ]
@@ -141,16 +149,16 @@
   },
   "active": "3a8d83ac680dcb20",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/txv.core登陆架构.md",
+    "工作业务重点、难点/V站性能优化.md",
+    "工作业务重点、难点/弹幕.md",
+    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "conflict-files-obsidian-git.md",
     "工作业务重点、难点/SEO.md",
     "工作业务重点、难点/js灰度、版控.md",
-    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
-    "工作业务重点、难点/弹幕.md",
     "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/打包构建相关.md",
-    "工作业务重点、难点/V站性能优化.md",
     "工作笔记/技术外.md",
     "额外编写文档/2023线上问题复盘.md",
     "工作笔记/可以做的事（好答辩）.md",
