@@ -101,11 +101,11 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 根据小程序传来的 wx 账号信息，换算得到该账号在腾讯视频登录环境下的登陆态信息，返回给小程序端。
 
 
-**3、登录完整流程解析**
+**3、小程序登录完整流程解析**
 
 >接下来以一次完整的登录流程为例，讲述 wx 小程序登录流程到底按步骤依次经历了哪些过程：
 
-1. 首先登录组件的内嵌 wx 登录页面，会向 websocket 中台服务请求建立 socket 连接，socket 连接建立后，socket 中台会向 wx 登录页面推送一个唯一标志当前连接的 key，这个 key 很重要，之后整个 wx 小程序登录流程都会围绕着这个 key 作为追溯等的唯一标记。<span style="background:#9254de">**一个 key 对应一个小程序码。**</span>
+1. 首先登录组件的内嵌 wx 登录页面，会向 websocket 中台服务请求建立 socket 连接，socket 连接建立后，socket 中台会向 wx 登录页面推送一个唯一标志当前连接的 key，这个 key 很重要，之后整个 wx 小程序登录流程都会围绕着这个 key 作为追溯等的唯一标记。***一个 key 对应一个小程序码。***
 
 2. 登录组件拿到唯一key后会带上平台号等信息 拼接一个链接，形如：
 	https://m.v.qq.com/author_login_tinyapp.html?appname=tinyapp&page=login%2Fwx%2Fwx&scene=bdd7ae425329dd8e_18 
