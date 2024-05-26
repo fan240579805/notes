@@ -119,8 +119,10 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 5. 当用户使用 wx 进行扫码，将会拉起小程序，小程序就拿到链接信息里面有 key 和平台信息等；小程序扫码成功后会主动向 node 中台发送请求，通知 node 中转后台当前已经扫码成功 status 状态变为2；
 
 6. Node 中转后台此时会根据 key 从 redis 中读取当前 redis 中存储的状态，这里有两种情况：
+	**核心逻辑，先读 redis 中的 status，校验无误后再更新 redis 中的 status** 
 
-	- 如果读到 redis 存储的 status=1, 那就认为此时的扫码成功是有效的，将会重新将用 key 作为键吧 status=2 存储在 redis 中，并触发 websocket 的 push 能力，将扫码成功这个状态变更通知到登录组件，登录组件的展示就会变更。 
+	- 如果读到 redis 存储的 status=1, 那就认为此时的扫码成功是有效的，将会重新将用 key 作为键把 status=2 存储在 redis 中，并触发 websocket 的 push 能力，将扫码成功这个状态变更通知到登录组件，登录组件的展示就会变更，提示扫码成功。
+	  ![](../pictures/Pasted%20image%2020240527005449.png)
 	   
 	- 如果读到 redis 存储的 status 大于或等于 2, 那就说明这个二维码已经被别人扫过并走到后面的状态了。此时就不再往 redis 中更新状态了。
 
