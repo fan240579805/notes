@@ -2,5 +2,6 @@
   "strictLineBreaks": true,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "attachmentFolderPath": ""
+  "attachmentFolderPath": "pictures",
+  "alwaysUpdateLinks": true
 }
