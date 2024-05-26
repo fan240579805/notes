@@ -6,7 +6,7 @@
 重点在于登录，其余都是些耦合的屎山。接下来围绕重点剖析一下整体的视频 web 登录方案。
 
 整个腾讯视频的 web 登录主要围绕着 cookie 存放用户信息去实现，核心在于接入层域名 video.qq.com 和业务侧域 v.qq.com 下的 cookie 间的通信。
-  
+
 
 # 二、用户登录鉴权流程
 
@@ -28,8 +28,8 @@
 3. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着 query 参数向视频登录后台发起请求，视频鉴权后台向 qq/wx 侧验证 code 有效则通过，下发用户票据 vusession 和 next_refresh_time 下一次续期时间间隔、用户头像等信息。
 	
 	同时后台接口会将这些信息 set-cookie 设置到 video.qq.com 域下，回包 data 也会下发同样的字段信息 <font color="red">(实际上有点多余，但有些历史项目需要接口直接 set-cookie)</font>
-  ![](../pictures/登录中转页发起登录请求回包截图.png)
-  ![](../pictures/登录请求回包body截图.png)
+  ![|675](../pictures/登录中转页发起登录请求回包截图.png)
+  ![|500](../pictures/登录请求回包body截图.png)
   
 4. 中转页拿到用户信息、票据，通过 postMessage 通知业务方，业务方通过引入 txv.core.js 中的 postMessage 来接收票据并注入到业务方自己的域名下；
 
@@ -50,8 +50,7 @@
 
 
 **1.  整体架构**
-  ![](../pictures/小程序登录架构图1.png)
-  
+  ![|900](../pictures/小程序登录架构图1.png)
   ![](../pictures/小程序登录架构图2.png)
   
 注意：整个流程都围绕着登录状态status的变更：
@@ -126,7 +125,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 	**核心逻辑，先读 redis 中的 status，校验无误后再更新 redis 中的 status** 
 
 	- 如果读到 redis 存储的 status=1, 那就认为此时的扫码成功是有效的，将会重新将用 key 作为键把 status=2 存储在 redis 中，并触发 websocket 的 push 能力，将扫码成功这个状态变更通知到登录组件，登录组件的展示就会变更，提示扫码成功。
-	  ![](../pictures/Pasted%20image%2020240527005449.png)
+	  ![](../pictures/微信小程序确认登陆展示图.png)
 	   
 	- 如果读到 redis 存储的 status 大于或等于 2, 那就说明这个二维码已经被别人扫过并走到后面的状态了。此时就不再往 redis 中更新状态了。
 
@@ -147,8 +146,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 12. Node 中转后台接受到来自登录组件 status=5 的请求后，会去触发单独写 redis 的操作，将之前这个 key 的 redis 存储信息删除。
 	但在这之前最最重要的操作是，它会先读取当前 key 在 redis 前面存储的信息，正常情况下前一个状态是 4 ，这时 redis 里面存储着小程序侧传递过来的登陆态相关信息，
 	node 中台将这些信息读取出来，根据里面的 cookie 过期时间键值对信息等，拼接生成 set-cookie 的 http 头信息返回到客户端，这样 cookie 信息就被种植到浏览器的 video.qq.com 下了。 
-	![](../pictures/sync_status回包截图.png)
-	
+	![|900](../pictures/sync_status回包截图.png)
 	到此微信小程序登录的全部流程就结束了。
 
 |      |                                       |                                             |                                              |
