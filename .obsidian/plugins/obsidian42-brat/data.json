@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "stargrey/obsidian-better-codeblock",
     "obsidian-canzi/Enhanced-editing"
   ],
   "pluginSubListFrozenVersion": [],
