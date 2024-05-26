@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#登录完整流程解析",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -133,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -147,10 +148,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a040f45a83b7ce0c",
+  "active": "a2593f000fcbeb43",
   "lastOpenFiles": [
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "登录完整流程解析.md",
     "工作业务重点、难点/txv.core登陆架构.md",
+    "第3部分登录完整流程解析.md",
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/大仓相关.md",
     "pictures/Pasted image 20240527002225.png",
     "pictures/Pasted image 20240527001148.png",
