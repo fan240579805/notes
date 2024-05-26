@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3445a23c29c2fe48",
+        "id": "a304412d1b0263c4",
         "type": "tabs",
         "children": [
           {
-            "id": "a040f45a83b7ce0c",
+            "id": "bb5c3f6429b5f218",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#登录完整流程解析",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,13 +147,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a040f45a83b7ce0c",
+  "active": "bb5c3f6429b5f218",
   "lastOpenFiles": [
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "工作业务重点、难点/txv.core登陆架构.md",
     "pictures/Pasted image 20240527005449.png",
     "登录完整流程解析.md",
-    "工作业务重点、难点/txv.core登陆架构.md",
     "第3部分登录完整流程解析.md",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/大仓相关.md",
     "pictures/Pasted image 20240527002225.png",
     "pictures/Pasted image 20240527001148.png",

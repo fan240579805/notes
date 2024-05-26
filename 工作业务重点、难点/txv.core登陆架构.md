@@ -87,6 +87,10 @@ b. 读写 redis 服务来查询或存储当前 key 对应的状态或登录状�
 c. 主动触发 push 操作通知 socket 中台向 web 端推送最新状态;
 d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回给浏览器。
 
+- **写服务(/sync_status)：** 一是提供临时状态存储，将二维码生成成功、扫码成功、确认登录、取消登录这些状态写入 redis，确认登录时，状态和登录态一并写入，并设置过期时间，过期自动清理；二是通知 websocket 服务当前写入的状态，websocket 服务在通知页面更新 UI 状态  
+
+- **读服务 (/read_status)：** 主要是供页面轮询当前状态，以显示相应 UI，作为一个兜底
+
 **Redis 端**
 同一个 redis 服务提供读写两个接口，供 node 中台读取和存储登录流程状态和登录态信息等，小程序码生命周期内，这个 redis 存的 key 有效期为5分钟。
 
@@ -134,7 +138,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 
 10. 接下来 node 中台会将登录态信息存储在 redis 中，存储的登陆态信息是这样的。(还包含小程序请求到的 vusession、vuserid、access_token 等登录票据)
 	```
-	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\" ... }}
+	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\" ...}}
 	```
 	ExtraData 中的就是后面要种植在页面中的 cookie 键值对。同时 node 中台会触发 socket push 将 wx 小程序扫码成功 status=4 通知到登录组件端。
 
@@ -147,9 +151,9 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 
 	到此微信小程序登录的全部流程就结束了。
 
-|      |                                   |                            |
-| ---- | ------------------------------------- | -------------------------- |
-| 代码仓库 | 生成小程序码的内嵌 iframe 页面：**miniapp_login** | Node 中转层：**http-cgi 1221** |
+|      |                                       |                                             |                                              |
+| ---- | ------------------------------------- | ------------------------------------------- | -------------------------------------------- |
+| 代码仓库 | 生成小程序码的内嵌 iframe 页面：**miniapp_login** | Node 中转层：**http-cgi 1221(/sync_status 接口)** | Node 中转层：**http-cgi 1222 (/read_status 接口)** |
 
 # 四、Q&A
 
