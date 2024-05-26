@@ -90,13 +90,15 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 
 **Redis 端**
 同一个 redis 服务提供读写两个接口，供 node 中台读取和存储登录流程状态和登录态信息等，小程序码生命周期内，这个 redis 存的 key 有效期为5分钟。
+
 因为登录特殊，为防止意外，在写入状态时，进行了双写，以视频侧 redis 为主，腾讯云 redis 为辅（反过来亦可），当读取视频侧 redis 失败时，去读取腾讯云 redis。
 
 **小程序端**
 微信扫码后拉起，拉起后读取到二维码链接上带来的唯一 key。
 通知 node 中转后台扫码成功、取消登录、确认登录这几个状态变更。
 当用户点击确认登录时和后台交互获取当前微信账号在腾讯视频的登陆态信息。
-后台登录服务
+
+**后台登录服务**
 根据小程序传来的 wx 账号信息，换算得到该账号在腾讯视频登录环境下的登陆态信息，返回给小程序端。
 
   
@@ -106,10 +108,12 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 
 >接下来以一次完整的登录流程为例，讲述 wx 小程序登录流程到底按步骤依次经历了哪些过程：
 
-1. 首先登录组件的内嵌 wx 登录页面，会向 websocket 中台服务请求建立 socket 连接，socket 连接建立后，socket 中台会向 wx 登录页面推送一个唯一标志当前连接的 key，这个 key 很重要，之后整个 wx 小程序登录流程都会围绕着这个 key 作为追溯等的唯一标记。一个 key 对应一个小程序码。
+1. 首先登录组件的内嵌 wx 登录页面，会向 websocket 中台服务请求建立 socket 连接，socket 连接建立后，socket 中台会向 wx 登录页面推送一个唯一标志当前连接的 key，这个 key 很重要，之后整个 wx 小程序登录流程都会围绕着这个 key 作为追溯等的唯一标记。**一个 key 对应一个小程序码。**
 
 2. 登录组件拿到唯一key后会带上平台号等信息 拼接一个链接，形如：
-https://m.v.qq.com/author_login_tinyapp.html?appname=tinyapp&page=login%2Fwx%2Fwx&scene=bdd7ae425329dd8e_18 再通过第三方组件用这个链接生成小程序的二维码。
+	https://m.v.qq.com/author_login_tinyapp.html?appname=tinyapp&page=login%2Fwx%2Fwx&scene=bdd7ae425329dd8e_18 
+	
+	再通过第三方组件用这个链接生成小程序的二维码。
 
 3. 二维码生成成功后，登录组件会将二维码已经生成的状态 status=1 同步给 node 中转后台。
 
@@ -134,12 +138,14 @@ https://m.v.qq.com/author_login_tinyapp.html?appname=tinyapp&page=login%2Fwx%2Fw
 	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\"}}
 	```
 	ExtraData 中的就是后面要种植在页面中的 cookie 键值对。同时 node 中台会触发 socket push 将 wx 小程序扫码成功 status=4 通知到登录组件端。
-	
+
 11. 登录组件知道当前小程序已经授权登录成功后，会主动往 node 中转后台发起 http 请求（sync_status），带的状态 status=5，目的是删除前面流程中存储的 status 状态，还有一个最最重要的目的，触发后续流程中 cookie 的种植。
 
-12. Node 中转后台接受到来自登录组件 status=5 的请求后，会去触发单独写 redis 的操作，将之前这个 key 的 redis 存储信息删除。但在这之前最最重要的操作是，它会先读取当前 key 在 redis 前面存储的信息，正常情况下前一个状态是 4 这时 redis 里面存储着小程序侧传递过来的登陆态相关信息，node 中台将这些信息读取出来，根据里面的 cookie 过期时间键值对信息等，拼接生成 set-cookie 的 http 头信息返回到客户端，这样 cookie 信息就被种植到浏览器的 video.Qq.Com 下了。 
+12. Node 中转后台接受到来自登录组件 status=5 的请求后，会去触发单独写 redis 的操作，将之前这个 key 的 redis 存储信息删除。
+	但在这之前最最重要的操作是，它会先读取当前 key 在 redis 前面存储的信息，正常情况下前一个状态是 4 这时 redis 里面存储着小程序侧传递过来的登陆态相关信息，node 中台将这些信息读取出来，根据里面的 cookie 过期时间键值对信息等，拼接生成 set-cookie 的 http 头信息返回到客户端，这样 cookie 信息就被种植到浏览器的 video.Qq.Com 下了。 
 ![](../pictures/Pasted%20image%2020240527002225.png)
-到此微信小程序登录的全部流程就结束了。
+
+	到此微信小程序登录的全部流程就结束了。
 
   
 
