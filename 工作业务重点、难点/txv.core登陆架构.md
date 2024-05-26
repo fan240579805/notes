@@ -137,7 +137,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 9. 如果用户在小程序点击了确认登录，此时小程序会和腾讯视频登录后台进行通信，用微信登录票据换取该账号对应腾讯视频的登陆态信息。再将登陆态信息同步到 node 中台同时 status=4，此时小程序的使命就算完成了。
 
 10. 接下来 node 中台会将登录态信息存储在 redis 中，存储的登陆态信息是这样的。(还包含小程序请求到的 vusession、vuserid、access_token 等登录票据)
-	```
+	```json
 	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\", "vusersion": ...}}
 	```
 	ExtraData 中的就是后面要种植在页面中的 cookie 键值对。同时 node 中台会触发 socket push 将 wx 小程序扫码成功 status=4 通知到登录组件端。
@@ -147,7 +147,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 12. Node 中转后台接受到来自登录组件 status=5 的请求后，会去触发单独写 redis 的操作，将之前这个 key 的 redis 存储信息删除。
 	但在这之前最最重要的操作是，它会先读取当前 key 在 redis 前面存储的信息，正常情况下前一个状态是 4 ，这时 redis 里面存储着小程序侧传递过来的登陆态相关信息，
 	node 中台将这些信息读取出来，根据里面的 cookie 过期时间键值对信息等，拼接生成 set-cookie 的 http 头信息返回到客户端，这样 cookie 信息就被种植到浏览器的 video.qq.com 下了。 
-	![|900](../pictures/sync_status回包截图.png)
+	![|800](../pictures/sync_status回包截图.png)
 
 	到此微信小程序登录的全部流程就结束了。
 
