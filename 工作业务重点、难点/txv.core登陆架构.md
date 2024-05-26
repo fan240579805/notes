@@ -28,8 +28,8 @@
 3. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着 query 参数向视频登录后台发起请求，视频鉴权后台向 qq/wx 侧验证 code 有效则通过，下发用户票据 vusession 和 next_refresh_time 下一次续期时间间隔、用户头像等信息。
 	
 	同时后台接口会将这些信息 set-cookie 设置到 video.qq.com 域下，回包 data 也会下发同样的字段信息 <font color="red">(实际上有点多余，但有些历史项目需要接口直接 set-cookie)</font>
-  ![](../pictures/Pasted%20image%2020240527000339.png)
-  ![](../pictures/Pasted%20image%2020240527000504.png)
+  ![](../pictures/登录中转页发起登录请求回包截图.png)
+  ![](../pictures/登录请求回包body截图.png)
   
 4. 中转页拿到用户信息、票据，通过 postMessage 通知业务方，业务方通过引入 txv.core.js 中的 postMessage 来接收票据并注入到业务方自己的域名下；
 
@@ -50,9 +50,9 @@
 
 
 **1.  整体架构**
-  ![](../pictures/Pasted%20image%2020240527001123.png)
+  ![](../pictures/小程序登录架构图1.png)
   
-  ![](../pictures/Pasted%20image%2020240527001148.png)
+  ![](../pictures/小程序登录架构图2.png)
   
 注意：整个流程都围绕着登录状态status的变更：
 ```
@@ -138,7 +138,7 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 
 10. 接下来 node 中台会将登录态信息存储在 redis 中，存储的登陆态信息是这样的。(还包含小程序请求到的 vusession、vuserid、access_token 等登录票据)
 	```
-	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\" ...}}
+	{\"errcode\": 0,\"errmsg\":\"\",\"status\": 4,\"extraData\":{\"next_refresh_time\":\"6600\",\"nick\":\"陶明灯\",\"head\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI7JkiaAQPeXbRdQhcy91qZQa8h9EVF0TIUAqCKsNFaPwic0wvUesLY0ibCmjhIXTjNibF8LYbPVnh0zg/132\", "vusersion": ...}}
 	```
 	ExtraData 中的就是后面要种植在页面中的 cookie 键值对。同时 node 中台会触发 socket push 将 wx 小程序扫码成功 status=4 通知到登录组件端。
 
@@ -163,7 +163,3 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 4. reids相关问题，
 5. websocket 如何接收并转发 node 中台的消息给 web
   
-
-  
-
-![Exported image](Exported%20image%2020240116155150-3.png)

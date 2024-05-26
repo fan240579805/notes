@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3260629112c9f51f",
+        "id": "4882b6c34fe908d2",
         "type": "tabs",
         "children": [
           {
-            "id": "0d0ae7c4bea09140",
+            "id": "ba97816c582490a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,21 +147,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0d0ae7c4bea09140",
+  "active": "ba97816c582490a8",
   "lastOpenFiles": [
-    "pictures/sync_status回包截图.png",
-    "工作业务重点、难点/txv.core登陆架构.md",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "pictures/小程序登录架构图2.png",
     "pictures/Pasted image 20240527005449.png",
+    "pictures/小程序登录架构图1.png",
+    "pictures/Pasted image 20240527001136.png",
+    "工作业务重点、难点/txv.core登陆架构.md",
+    "pictures/登录请求回包body截图.png",
+    "pictures/登录中转页发起登录请求回包截图.png",
+    "pictures/sync_status回包截图.png",
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "登录完整流程解析.md",
     "第3部分登录完整流程解析.md",
     "工作业务重点、难点/大仓相关.md",
     "pictures/Pasted image 20240527002225.png",
-    "pictures/Pasted image 20240527001148.png",
-    "pictures/Pasted image 20240527001136.png",
-    "pictures/Pasted image 20240527001123.png",
-    "pictures/Pasted image 20240527000504.png",
-    "pictures/Pasted image 20240527000339.png",
     "工作业务重点、难点/SEO.md",
     "工作业务重点、难点/js灰度、版控.md",
     "工作业务重点、难点/弹幕.md",
