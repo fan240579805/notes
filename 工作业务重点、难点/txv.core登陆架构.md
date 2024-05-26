@@ -147,8 +147,8 @@ d. 最后向浏览器端种植 cookies 时，拼接 set-cookie http 头并返回
 12. Node 中转后台接受到来自登录组件 status=5 的请求后，会去触发单独写 redis 的操作，将之前这个 key 的 redis 存储信息删除。
 	但在这之前最最重要的操作是，它会先读取当前 key 在 redis 前面存储的信息，正常情况下前一个状态是 4 ，这时 redis 里面存储着小程序侧传递过来的登陆态相关信息，
 	node 中台将这些信息读取出来，根据里面的 cookie 过期时间键值对信息等，拼接生成 set-cookie 的 http 头信息返回到客户端，这样 cookie 信息就被种植到浏览器的 video.qq.com 下了。 
-	![](../pictures/Pasted%20image%2020240527002225.png)
-
+	![](../pictures/sync_status回包截图.png)
+	
 	到此微信小程序登录的全部流程就结束了。
 
 |      |                                       |                                             |                                              |
