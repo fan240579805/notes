@@ -74,29 +74,24 @@
   
 ![Exported image](Exported%20image%2020240116155150-2.png)
 
-==注意：整个流程都围绕着登录状态status的变更：==
+注意：整个流程都围绕着登录状态status的变更：
 
 ```
-==const== ==R====EQ_INIT=========1== ==// 码成功生成==
-
-==const== ==R====EQ_SCAN_SUCC=========2== ==//扫码成功==
-
-==const== ==R====EQ_CANCEL_LOGIN=========3== ==//取消登陆==
-
-==const== ==R====EQ_CONFIRM_LOGIN=========4== ==//确认登陆==
-
-==const== ==R====EQ_REMOVE_STATUS=========5== ==//删除登录状态==
+const REQ_INIT = 1 // 码成功生成 
+const REQ_SCAN_SUCC = 2 //扫码成功 
+const REQ_CANCEL_LOGIN = 3 //取消登陆 
+const REQ_CONFIRM_LOGIN = 4 //确认登陆 
+const REQ_REMOVE_STATUS = 5 //删除登录状态
 ```
 
   
-
 **2、先描述一下结构图中各个构成部分的主要功能**
 
 ==（这部分的各个结构的功能解析可能直接看起来会抽象些，可能直接看不太好理解，建议可以先看第三部分登录完整流程解析）==
 
 **登录组件内嵌的微信登录页面**
 
-==https://cache.tv.qq.com/miniapp/wxlogin/index.html?platform=2== ==这个页面会被内嵌到web端登录组件 还有mac/pc客户端的登录组件中。 主要功能是：==
+https://cache.tv.qq.com/miniapp/wxlogin/index.html?platform=2 这个页面会被内嵌到 web 端登录组件还有mac/pc 客户端的登录组件中。主要功能是：
 
 ==a.== ==与socket中台建立链接，（socket失败会用http轮询兜底）获取最新登录状态或key值==
 
