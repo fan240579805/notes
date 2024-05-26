@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#符号本身以及它后面的字符称之为hash，可通过",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -149,7 +149,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "a2593f000fcbeb43",
+  "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/打包构建相关.md",
