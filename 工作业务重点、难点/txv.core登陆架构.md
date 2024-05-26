@@ -10,16 +10,23 @@
 
   
 
-1. 用户打开登录框，内嵌一个iframe，拉起qq/wx提供的web互联登录页面。这个页面url会拼上一些参数，用于扫码或密码登陆成功后执行一些操作。￼如下地址，拉起web登录框会拼接并插入这个iframe到页面上￼[https://graph.qq.com/oauth2.0/show?redirect_uri=https%3A%2F%2Fvideo.qq.com%2Ftransfer_login_page%2Findex.html%3Fvplatform%3D2%26type%3Dqq%26appid%3D101483052&which=Login&display=pc&response_type=code&client_id=101483052](https://graph.qq.com/oauth2.0/show?redirect_uri=https%3A%2F%2Fvideo.qq.com%2Ftransfer_login_page%2Findex.html%3Fvplatform%3D2%26type%3Dqq%26appid%3D101483052&which=Login&display=pc&response_type=code&client_id=101483052)￼￼redirect_url，在互联平台登陆成功后重定向的地址，利用这种方式就可以在redirect_url中向我们腾讯视频自己的鉴权服务获取票据和身份信息了。
+1. 用户打开登录框，内嵌一个 iframe，拉起 qq/wx 提供的 web 互联登录页面。这个页面 url 会拼上一些参数，用于扫码或密码登陆成功后执行一些操作。
+
+	如下地址，拉起 web 登录框会拼接并插入这个 iframe 到页面上 https://graph.qq.com/oauth2.0/show?redirect_uri=https%3A%2F%2Fvideo.qq.com%2Ftransfer_login_page%2Findex.html%3Fvplatform%3D2%26type%3Dqq%26appid%3D101483052&which=Login&display=pc&response_type=code&client_id=101483052 
+	
+	redirect_url，是互联平台登陆成功后重定向的地址，利用这种方式就可以在 redirect_url 中向我们腾讯视频自己的鉴权服务发起请求，获取票据和身份信息了。
   
-3. 扫码或密码登陆成功，互联平台会往redirect_url后面拼接一个query，appid=101483052&code=DF3C376085A09FE85EA864FD90860415，code是qq/wx侧登陆成功后下发的唯一标识，appid是视频注册的唯一平台id，登陆组件再拼接对应的平台好，登陆类型type=qq给登录中转页。￼此时iframe就会根据redirect_url去从定向到我们自己写好的中转页。￼￼redirect_uri: [https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415](https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415)
+2. 扫码或密码登陆成功，互联平台会往 redirect_url 后面拼接一个 query：appid=101483052&code=DF3C376085A09FE85EA864FD90860415
+	code 是 qq/wx 侧登陆成功后下发的唯一标识，appid 是视频注册的唯一平台 id。
+	
+	登陆组件再拼接对应的平台好，登陆类型 type=qq 给登录中转页。此时 iframe 就会根据 redirect_url 去从定向到我们自己写好的中转页。redirect_uri: [https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415](https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415)
 
   
   
 
-1. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着query参数向视频登录后台发起请求，视频鉴权后台向qq/wx侧验证code有效则通过，下发用户票据vusession和next_refresh_time下一次续期时间间隔、用户头像等信息。同时后台接口会将这些信息set-cookie设置到video.qq.com域下，回包data也会下发同样的字段信息**(****实际上有点多余，但有些历史项目需要接口直接****set-cookie)**
+3. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着 query 参数向视频登录后台发起请求，视频鉴权后台向 qq/wx 侧验证 code 有效则通过，下发用户票据 vusession 和 next_refresh_time 下一次续期时间间隔、用户头像等信息。同时后台接口会将这些信息 set-cookie 设置到 video.qq.com 域下，回包 data 也会下发同样的字段信息<font>实际上有点多余，但有些历史项目需要接口直接****set-cookie)</font>
+  ![](../pictures/Pasted%20image%2020240527000339.png)
   
-![Exported image](Exported%20image%2020240116155150-0.png)  
   
 6. 中转页拿到用户信息、票据，通过postMessage通知业务方，业务方通过引入txv.core.js中的postMessage来接收票据并注入到业务方自己的域名下；￼保证video.qq.com域下的票据和业务方v.qq.com域下的票据一致。这样业务侧自己取cookie中的登录态信息、其他后台走统一接入层pbaccess.video.qq.com的服务请求携带的cookie完全一致，不会出错。￼
 7. qq/wx登陆及视频鉴权完成，txv.core.js执行业务侧主动注册的addRedayCallback（登录态ready）事件，流程结束。
