@@ -17,27 +17,28 @@
 	redirect_url，是互联平台登陆成功后重定向的地址，利用这种方式就可以在 redirect_url 中向我们腾讯视频自己的鉴权服务发起请求，获取票据和身份信息了。
   
 2. 扫码或密码登陆成功，互联平台会往 redirect_url 后面拼接一个 query：appid=101483052&code=DF3C376085A09FE85EA864FD90860415
+	
 	code 是 qq/wx 侧登陆成功后下发的唯一标识，appid 是视频注册的唯一平台 id。
 	
 	登陆组件再拼接对应的平台好，登陆类型 type=qq 给登录中转页。此时 iframe 就会根据 redirect_url 去从定向到我们自己写好的中转页。redirect_uri: [https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415](https://video.qq.com/transfer_login_page/index.html?vplatform=2&type=qq&appid=101483052&code=DF3C376085A09FE85EA864FD90860415)
 
-  
-  
 
-3. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着 query 参数向视频登录后台发起请求，视频鉴权后台向 qq/wx 侧验证 code 有效则通过，下发用户票据 vusession 和 next_refresh_time 下一次续期时间间隔、用户头像等信息。同时后台接口会将这些信息 set-cookie 设置到 video.qq.com 域下，回包 data 也会下发同样的字段信息<font>实际上有点多余，但有些历史项目需要接口直接****set-cookie)</font>
+3. 在登录中转页 transfer_login_page 中，页面加载完成立刻拿着 query 参数向视频登录后台发起请求，视频鉴权后台向 qq/wx 侧验证 code 有效则通过，下发用户票据 vusession 和 next_refresh_time 下一次续期时间间隔、用户头像等信息。
+	
+	同时后台接口会将这些信息 set-cookie 设置到 video.qq.com 域下，回包 data 也会下发同样的字段信息 <font color="red">(实际上有点多余，但有些历史项目需要接口直接 set-cookie)</font>
   ![](../pictures/Pasted%20image%2020240527000339.png)
+  ![](../pictures/Pasted%20image%2020240527000504.png)
   
-  
-6. 中转页拿到用户信息、票据，通过postMessage通知业务方，业务方通过引入txv.core.js中的postMessage来接收票据并注入到业务方自己的域名下；￼保证video.qq.com域下的票据和业务方v.qq.com域下的票据一致。这样业务侧自己取cookie中的登录态信息、其他后台走统一接入层pbaccess.video.qq.com的服务请求携带的cookie完全一致，不会出错。￼
-7. qq/wx登陆及视频鉴权完成，txv.core.js执行业务侧主动注册的addRedayCallback（登录态ready）事件，流程结束。
-8. 续期，切换页面可见主动续期（十分钟冷却）、根据next_refresh_time设置一个定时器，这个值每次调用登录或者续期接口时都会更新，单位s，保证在下次某个时间点前一定发起续期。
-9. 登出，调logout接口，接口会清理video.qq.com下的cookie中的登录信息，txv.core.js会清理业务侧v.qq.com域下的登录信息。
+4. 中转页拿到用户信息、票据，通过 postMessage 通知业务方，业务方通过引入 txv.core.js 中的 postMessage 来接收票据并注入到业务方自己的域名下；
 
-  
-![Exported image](Exported%20image%2020240116155150-1.png)  
-  
-  
-  
+	保证 video.qq.com 域下的票据和业务方v.qq.com 域下的票据一致。这样业务侧自己取 cookie 中的登录态信息、其他后台走统一接入层 pbaccess.video.qq.com 的服务请求携带的 cookie 完全一致，不会出错。
+	
+5. qq/wx 登陆及视频鉴权完成，txv.core.js 执行业务侧主动注册的 addLoginCallback（登录态 ready）事件，流程结束。
+
+6. 续期，切换页面可见主动续期（十分钟冷却）、根据 next_refresh_time 设置一个定时器，这个值每次调用登录或者续期接口时都会更新，单位 s，保证在下次某个时间点前一定发起续期。
+
+7. 登出，调 logout 接口，接口会清理 video.qq.com 下的 cookie 中的登录信息，txv.core.js 会清理业务侧v.qq.com 域下的登录信息。
+ 
   
 
 # **三、小程序码登录（已下线，但方案设计还不错，总结为自己的）**
