@@ -1,6 +1,6 @@
 {
   "aestheticStyle": "default",
-  "positionStyle": "top",
+  "positionStyle": "fixed",
   "menuCommands": [
     {
       "id": "editing-toolbar:editor-undo",
@@ -278,6 +278,19 @@
       "id": "editing-toolbar:workplace-fullscreen-focus",
       "name": "workplace-Fullscreen ",
       "icon": "exit-fullscreen"
+    },
+    {
+      "id": "workspace:goto-tab-1",
+      "name": "转到标签 #1",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "1"
+        }
+      ],
+      "icon": "arrow-big-right"
     }
   ],
   "appendMethod": "workspace",
