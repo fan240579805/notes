@@ -4,7 +4,7 @@
 
 ##### 一、设计架构图
 
-![[design.png]]
+![[../pictures/design.png]]
 
 node 服务：部署在服务器上（123 平台统一管理）
 
