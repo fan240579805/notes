@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/txv.core登陆架构.md",
+                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登陆组件迁移重构.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登陆组件迁移重构.md",
+                "file": "工作业务重点、难点/登录组件/未命名.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/登陆组件迁移重构.md",
+                "file": "工作业务重点、难点/登录组件/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/登陆组件迁移重构.md",
+                "file": "工作业务重点、难点/登录组件/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/登陆组件迁移重构.md"
+                "file": "工作业务重点、难点/登录组件/未命名.md"
               }
             }
           }
@@ -175,18 +175,20 @@
   },
   "active": "a735ff79ea1085f2",
   "lastOpenFiles": [
+    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+    "工作业务重点、难点/登录组件/未命名.md",
+    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "额外编写文档/txv.core重构计划.md",
+    "工作业务重点、难点/js灰度、版控.md",
+    "工作业务重点、难点/V站性能优化.md",
+    "工作业务重点、难点/登录组件",
     "工作笔记/技术外.md",
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/打包构建相关.md",
-    "工作业务重点、难点/txv.core登陆架构.md",
-    "工作业务重点、难点/V站性能优化.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/SEO.md",
-    "工作业务重点、难点/登陆组件迁移重构.md",
     "conflict-files-obsidian-git.md",
-    "工作业务重点、难点/js灰度、版控.md",
     "工作业务重点、难点/弹幕.md",
     "前端面试/性能优化.md",
     "前端面试/网络方面.md",
@@ -213,7 +215,6 @@
     "额外编写文档",
     "工作笔记",
     "工作业务重点、难点",
-    "前端面试/状态码.md",
     "前端面试",
     "文件夹1"
   ]
