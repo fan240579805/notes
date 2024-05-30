@@ -354,7 +354,7 @@ invoke('getDeviceInfo', null, { timeout: 500 }).then((info) => {
 | 项目管理  | 大仓 monorepo 开发 |
 | 编译工具  | vite、rollup    |
 | UI 开发 | svelte         |
-
+![](../../pictures/union-login初步架构图.png)
 ## 5.2 项目目录结构
 ```
 ├── packages  //不同端登录具体实现
@@ -398,8 +398,9 @@ Svelte 体积小没有运行时被打包进代码
 *txv.core 目前 134 k*
 
 ## 5.4 如何保证最终各端的代码比较小？
-### （1）UI 采用轻量级框架开发—— svelte
-### （2）npm 包形式——充分利用 tree shaking
+###### （1）UI 采用轻量级框架开发—— svelte
+###### （2）npm 包形式——充分利用 tree shaking
+
 各个业务方在编译时配置对应环境的环境变量进行 tree shaking
 ```ts
 export class UnionLoginFactory {
@@ -413,10 +414,9 @@ export class UnionLoginFactory {
   }
 }
 ```
-### (3) js sdk 静态文件形式
-
-####  (3.1) uni-login.js 内部根据当前环境动态 import 加载对应环境的 Login 类文件
-#### (3.2）给各端分别打包 js 文件
+###### 3）npm 包形式——充分利用 tree shaking
+	3.1) uni-login.js 内部根据当前环境动态 import 加载对应环境的 Login 类文件
+	3.2）给各端分别打包 js 文件
 
 | 分端打包静态 js 文件部署 | 用途描述      |
 | -------------- | --------- |
@@ -496,7 +496,8 @@ Uni-login：增量业务接入，由新接入的业务方自行接入验证和�
 
 如频道页接入，频道页会通过查询实验分流，分别加载不同的 script 开放量和切换到 uni-login
 
-##  5.8 项目稳定性
+## 5.8 项目稳定性
+
 1. 添加单元测试
 2. 对各端进行关键流畅的详细日志上报
 3. 搭建各端登录流程成功率看榜、建立告警机制
