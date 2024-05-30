@@ -50,8 +50,9 @@ Pbaccess. Video. Qq. Com/trpc. Video_account_login. Web_login_trpc. WebLoginTrpc
 #### 5) 车机 localStorage 替代 cookie
 
 ### 2. 现网已暴露给外部业务使用的 API
+
 >（新项目中需对齐才能让外界对切换无感知）
->
+
 ![|500](../../pictures/Pasted%20image%2020240531011416.png)
 Api 非常多，不确定哪一些被业务使用，如果在新项目中对齐这些 api，有些 api 可能有特定副作用在新项目中不一定能完全对得齐。
 
@@ -102,7 +103,7 @@ listenLoginMessage
 	1. 拉起登录面板，选择不同的登录形式
 	2. Wx 和 qq 是不同的登录流程
 	
-Wx 登录：
+微信登录：
     1. Wx——》wx. Login 得到到 code  
     2. 带 code 数据请求 Login 接口得到登录态信息:  https://pbaccess.video.qq.com/com.tencent.spp_rpc.bazel.RpcLogin/Login?video_appid=3000002&vplatform=
     3，请求 getuser 
@@ -164,8 +165,6 @@ https://pbaccess.video.qq.com/com.tencent.spp_rpc.bazel.RpcLogin/authRefresh?vid
 | updateRecommendSwitch | 更新 storage 中的推荐 switch，和登录流程无关 |
 | fetchOpenId | 获取 openid |
 
-
-
 ### 3. 可以复用的地方
 续期接口处理逻辑和 V 站类似
 登录接口：不一致处理逻辑也有不少差别
@@ -180,7 +179,6 @@ https://pbaccess.video.qq.com/com.tencent.spp_rpc.bazel.RpcLogin/authRefresh?vid
 | onLoginSucc | 登录成功 |
 | onLoginFail | 登录失败 |
 | getLoginInfo | 获取登录信息 |
-
 
 ### 5. 小程序和 web 复用上面临的困难
 **难点：** 小程序 UI 语法和 web 不一致，无法直接使用
@@ -228,22 +226,18 @@ https://video.qq.com/cookie/1.0.0/cookie.html?_t=1712629557984
 | openLogin | 拉起登录面板 |
 | refreshAuthToken | 刷新登录态 |
 
-
-
 ### 4. M 站登录运行环境复杂
 需要支持运行在小程序、 tv、体育等场景
 
 ## 4.5 EVO-VUE 环境——最终要对外界支持的 API
 
-
-| api | 描述 |
-| ------ | ------ |
-| openLogin | 拉起登录 |
-| logout | 退出登录 |
-| getLoginInfo | 获取登录信息 |
-| isLogin | 是否登录 |
+| api                | 描述      |
+| ------------------ | ------- |
+| openLogin          | 拉起登录    |
+| logout             | 退出登录    |
+| getLoginInfo       | 获取登录信息  |
+| isLogin            | 是否登录    |
 | onLoginStateChange | 登录态发生变化 |
-
 
 ### 1. 登录
 ```
@@ -354,11 +348,11 @@ invoke('getDeviceInfo', null, { timeout: 500 }).then((info) => {
 # 五、方案设计
 ## 5.1 技术栈
 
-| 类别 | 选型 |
-| ------ | ------ |
-| 项目管理 | 大仓 monorepo 开发 |
-| 编译工具 | vite、rollup |
-| UI 开发 | svelte ？ |
+| 类别    | 选型             |
+| ----- | -------------- |
+| 项目管理  | 大仓 monorepo 开发 |
+| 编译工具  | vite、rollup    |
+| UI 开发 | svelte         |
 
 ## 5.2 项目目录结构
 ```
@@ -397,9 +391,10 @@ invoke('getDeviceInfo', null, { timeout: 500 }).then((info) => {
 
 
 ## 5.3 UI 模版怎么开发比较好维护？
+
 Svelte 体积小没有运行时被打包进代码
 写了一个 demo：点击按钮出 toast 的 js 库，基于 vue 库大小 90 k  ，svelte 4k
-（txv. Core 目前 134 k）
+（txv.core 目前 134 k）
 
 ## 5.4 如何保证最终各端的代码比较小？
 ### （1）UI 采用轻量级框架开发——svelte
@@ -416,17 +411,16 @@ export class UnionLoginFactory {
 	...
   }
 }
-
 ```
 ### (3) js sdk 静态文件形式
 
 ####  (3.1) uni-login. Js 内部根据当前环境动态 import 加载对应环境的 Login 类文件
 #### (3.2）给各端分别打包 js 文件
 
-| 分端打包静态 js 文件部署 | 用途描述 |
-| ------ | ------ |
-| v-login. Js | v 站登录用 |
-| h 5-login. Js | m 站和端内场景用 |
+| 分端打包静态 js 文件部署 | 用途描述      |
+| -------------- | --------- |
+| v-login. Js    | v 站登录用    |
+| h 5-login. Js  | m 站和端内场景用 |
 
 根据 evo-vue、hippy、小程序特性，** 这几个环境依然以 npm 包暴露**
 
@@ -471,12 +465,13 @@ Nx 本身并没有内置类似 Lerna 的自动版本更新功能，可以引入 
 
 ## 5.6 部署发布
 ### 5.6.1 搭建大仓流水线
-**1. 灵活的部署发布能力**：
+1. 灵活的部署发布能力：
 指定单独只发布其中一个或特定几个业务项目或 npm 包
 全部一起重新发布的能力
+
 2. **针对 affected 发布**只发布新修改所影响的部分根据 nx affected 来判断受影响的范围
-3. 支持**多种类型产物**的生成和部署能力
-4. 各子项目发布时**采用独立流水线**，方便单独审批和控制观察
+2. 支持**多种类型产物**的生成和部署能力
+3. 各子项目发布时**采用独立流水线**，方便单独审批和控制观察
 ### 5.6.2 各端部署形式
 
 | 端 | 部署形式 | 部署环境 |
@@ -532,4 +527,4 @@ Uni-login：增量业务接入，由新接入的业务方自行接入验证和�
 
 [需求拆分排期](https://doc.weixin.qq.com/sheet/e3_AW8AvAYhAF8AubfDiIRQTOeDE5EDB?scode=AJEAIQdfAAoj2ajOrzAW8AvAYhAF8&tab=BB08J2) 
 
-
+``
