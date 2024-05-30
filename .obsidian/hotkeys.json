@@ -1,1 +1,12 @@
-{}
+{
+  "Enhanced-editing:del-space2": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ]
+}
