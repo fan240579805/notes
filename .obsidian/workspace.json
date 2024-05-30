@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#方案设计",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md"
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md"
               }
             }
           }
@@ -162,8 +163,8 @@
   },
   "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
-    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "pictures/union-login初步架构图.png",
     "pictures/Pasted image 20240531011416.png",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
