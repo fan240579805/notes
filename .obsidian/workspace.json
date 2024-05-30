@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a735ff79ea1085f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作业务重点、难点/登陆组件迁移重构.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,29 +173,26 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "c617796630149779",
+  "active": "a735ff79ea1085f2",
   "lastOpenFiles": [
-    "工作业务重点、难点/V站性能优化.md",
-    "工作业务重点、难点/登陆组件迁移重构.md",
-    "工作业务重点、难点/txv.core登陆架构.md",
+    "额外编写文档/txv.core重构计划.md",
+    "工作笔记/技术外.md",
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
-    "工作业务重点、难点/SEO.md",
+    "工作业务重点、难点/大仓相关.md",
+    "工作业务重点、难点/打包构建相关.md",
     "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/V站性能优化.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/SEO.md",
+    "工作业务重点、难点/登陆组件迁移重构.md",
+    "conflict-files-obsidian-git.md",
     "工作业务重点、难点/js灰度、版控.md",
     "工作业务重点、难点/弹幕.md",
-    "额外编写文档/txv.core重构计划.md",
-    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
-    "工作业务重点、难点/大仓相关.md",
-    "工作业务重点、难点/打包构建相关.md",
     "前端面试/性能优化.md",
     "前端面试/网络方面.md",
     "前端面试/面试不会的题.md",
     "额外编写文档/2023线上问题复盘.md",
     "工作笔记/可以做的事（好答辩）.md",
-    "工作笔记/技术外.md",
     "pictures/登录请求回包body截图.png",
     "pictures/登录中转页发起登录请求回包截图.png",
     "pictures/微信小程序确认登陆展示图.png",
@@ -198,7 +207,6 @@
     "前端面试/SSR.md",
     "pictures/design.png",
     "pictures",
-    "conflict-files-obsidian-git.md",
     "readme.md",
     "前端面试/浏览器.md",
     "前端面试/js.md",
