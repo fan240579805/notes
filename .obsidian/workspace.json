@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+                "file": "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
+                "file": "额外编写文档/txv.core重构计划.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,17 +174,17 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "a735ff79ea1085f2",
+  "active": "c617796630149779",
   "lastOpenFiles": [
+    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+    "额外编写文档/txv.core重构计划.md",
+    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "pictures/Pasted image 20240531011416.png",
     "pictures/同步cookie.png",
     "tencent/api/attachments/s3",
     "tencent/api/attachments",
     "tencent/api",
     "tencent",
-    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
-    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
-    "额外编写文档/txv.core重构计划.md",
     "工作笔记/可以做的事（好答辩）.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/js灰度、版控.md",
@@ -214,7 +214,6 @@
     "pictures/Pasted image 20240527002225.png",
     "前端面试/VUE.md",
     "前端面试/SSR.md",
-    "pictures/design.png",
     "pictures",
     "readme.md",
     "前端面试/浏览器.md",

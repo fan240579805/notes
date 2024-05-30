@@ -69,7 +69,7 @@ Api 非常多，不确定哪一些被业务使用，如果在新项目中对齐�
 [外侧业务调用 txv.login.js API统计](https://doc.weixin.qq.com/sheet/e3_AW8AvAYhAF8AubfDiIRQTOeDE5EDB?scode=AJEAIQdfAAoj2ajOrzAW8AvAYhAF8&tab=wib9nu) 中标注
 
 ### 5. 初步技术方案
-参照 https://iwiki.woa.com/p/4008294065
+参照 [txv.core重构计划](../../额外编写文档/txv.core重构计划.md)
 ## 4.2 win/mac 客户端
 ### 1. 核心流程和功能
 
@@ -206,7 +206,7 @@ https://film.qq.com/weixin/login.html?ru=https%3A%2F%2Fm.v.qq.com%2F
     端外： 清除cookie 
 	
 #### 同步登录态
-和 V 站类似也需要将 video. Qq. Com 下的登录态同步到m.v.qq. Com 下，使用的同步平台是：
+和 V 站类似也需要将 video.qq.com 下的登录态同步到 m.v.qq.com 下，使用的同步平台是：
 https://video.qq.com/cookie/1.0.0/cookie.html?_t=1712629557984
 
 ### 2. 代码可以复用的地方
@@ -214,7 +214,7 @@ https://video.qq.com/cookie/1.0.0/cookie.html?_t=1712629557984
 	b. 登录、续期、登出能力
 	c. 资产绑定能力
 
-*** UI 或许能和小程序复用***
+***UI 或许能和小程序复用***
 
 ### 3. 最终要暴露给外界的 api
 
@@ -227,6 +227,7 @@ https://video.qq.com/cookie/1.0.0/cookie.html?_t=1712629557984
 | refreshAuthToken | 刷新登录态 |
 
 ### 4. M 站登录运行环境复杂
+
 需要支持运行在小程序、 tv、体育等场景
 
 ## 4.5 EVO-VUE 环境——最终要对外界支持的 API
@@ -308,7 +309,7 @@ getLoginCookie() // 获取登录态—— invoke('getMainUserInfo）、Native.Co
 ```
 基于得到的登录态判断
 ```
-## 4.7 端内 H 5——最终要对外界支持的 API
+## 4.7 端内 H5 —— 最终要对外界支持的 API
 基于端内 JSbridge 和端交互
 ### 1. 登录
 ```
@@ -394,10 +395,10 @@ invoke('getDeviceInfo', null, { timeout: 500 }).then((info) => {
 
 Svelte 体积小没有运行时被打包进代码
 写了一个 demo：点击按钮出 toast 的 js 库，基于 vue 库大小 90 k  ，svelte 4k
-（txv.core 目前 134 k）
+*txv.core 目前 134 k*
 
 ## 5.4 如何保证最终各端的代码比较小？
-### （1）UI 采用轻量级框架开发——svelte
+### （1）UI 采用轻量级框架开发—— svelte
 ### （2）npm 包形式——充分利用 tree shaking
 各个业务方在编译时配置对应环境的环境变量进行 tree shaking
 ```ts
@@ -414,7 +415,7 @@ export class UnionLoginFactory {
 ```
 ### (3) js sdk 静态文件形式
 
-####  (3.1) uni-login. Js 内部根据当前环境动态 import 加载对应环境的 Login 类文件
+####  (3.1) uni-login.js 内部根据当前环境动态 import 加载对应环境的 Login 类文件
 #### (3.2）给各端分别打包 js 文件
 
 | 分端打包静态 js 文件部署 | 用途描述      |
