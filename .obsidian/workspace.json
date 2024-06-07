@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "efa38e6d752d34fb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -148,7 +159,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "07f1298fde1dbe21",
+  "active": "efa38e6d752d34fb",
   "lastOpenFiles": [
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/SEO.md",
