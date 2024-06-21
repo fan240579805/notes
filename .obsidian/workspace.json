@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+                "file": "工作笔记/可以做的事（好答辩）.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db4bf84ca475578d",
+            "id": "efa38e6d752d34fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.50961685180664
+    "width": 230.50961685180664,
+    "collapsed": true
   },
   "right": {
     "id": "f4868f19ce00b820",
@@ -160,34 +162,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "07f1298fde1dbe21",
+  "active": "efa38e6d752d34fb",
   "lastOpenFiles": [
-    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
-    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
-    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
-    "工作业务重点、难点/打包构建相关.md",
-    "工作业务重点、难点/大仓相关.md",
-    "额外编写文档/2023线上问题复盘.md",
-    "pictures/Pasted image 20240531011416.png",
     "pictures/new-login-class2.png",
-    "pictures/new-login-class.png",
-    "额外编写文档/txv.core重构计划.md",
-    "pictures/小程序登录架构图1.png",
-    "pictures/login-class.png",
-    "工作笔记/可以做的事（好答辩）.md",
+    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
+    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/登录组件",
     "pictures/同步cookie.png",
     "pictures/union-login初步架构图.png",
+    "pictures/Pasted image 20240531011416.png",
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/SEO.md",
     "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/V站性能优化.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "额外编写文档/txv.core重构计划.md",
+    "额外编写文档/2023线上问题复盘.md",
+    "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
+    "工作业务重点、难点/打包构建相关.md",
+    "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/js灰度、版控.md",
     "pictures/登录请求回包body截图.png",
     "pictures/登录中转页发起登录请求回包截图.png",
     "pictures/微信小程序确认登陆展示图.png",
+    "pictures/小程序登录架构图2.png",
+    "pictures/小程序登录架构图1.png",
+    "pictures/Pasted image 20240527001136.png",
+    "pictures/sync_status回包截图.png",
     "登录完整流程解析.md",
     "第3部分登录完整流程解析.md",
     "工作业务重点、难点/弹幕.md",
