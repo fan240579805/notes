@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d6841feac8924e96",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "pictures/new-login-class2.png"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+                "file": "pictures/new-login-class2.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+                "file": "pictures/new-login-class2.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md"
+                "file": "pictures/new-login-class2.png"
               }
             }
           }
@@ -162,10 +172,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "efa38e6d752d34fb",
+  "active": "d6841feac8924e96",
   "lastOpenFiles": [
-    "pictures/new-login-class2.png",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+    "pictures/new-login-class2.png",
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/登录组件",
@@ -190,7 +200,6 @@
     "pictures/小程序登录架构图2.png",
     "pictures/小程序登录架构图1.png",
     "pictures/Pasted image 20240527001136.png",
-    "pictures/sync_status回包截图.png",
     "登录完整流程解析.md",
     "第3部分登录完整流程解析.md",
     "工作业务重点、难点/弹幕.md",
