@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "000722a260a40e0d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,7 +172,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "efa38e6d752d34fb",
+  "active": "000722a260a40e0d",
   "lastOpenFiles": [
     "pictures/new-login-class2.png",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
