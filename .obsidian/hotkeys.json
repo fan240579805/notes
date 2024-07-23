@@ -12,14 +12,6 @@
   "Enhanced-editing:add-Line0": [],
   "workspace:goto-tab-1": [],
   "workspace:goto-tab-2": [],
-  "editor:set-heading-6": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "6"
-    }
-  ],
   "workspace:goto-tab-6": [],
   "Enhanced-editing:biaoti1-text": [
     {
@@ -68,5 +60,8 @@
       ],
       "key": "6"
     }
-  ]
+  ],
+  "workspace:goto-tab-3": [],
+  "workspace:goto-tab-4": [],
+  "workspace:goto-tab-5": []
 }
