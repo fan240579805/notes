@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作笔记/汇报晋级材料编写.md",
+                "file": "工作笔记/汇报材料编写.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作笔记/汇报晋级材料编写.md",
+                "file": "工作笔记/汇报材料编写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作笔记/汇报晋级材料编写.md",
+                "file": "工作笔记/汇报材料编写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作笔记/汇报晋级材料编写.md"
+                "file": "工作笔记/汇报材料编写.md"
               }
             }
           }
@@ -158,14 +158,15 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian42-brat:BRAT": false
+      "obsidian42-brat:BRAT": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
   "active": "efa38e6d752d34fb",
   "lastOpenFiles": [
     "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
-    "工作笔记/汇报晋级材料编写.md",
+    "工作笔记/汇报材料编写.md",
     "额外编写文档/txv.core重构计划.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
