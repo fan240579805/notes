@@ -63,5 +63,14 @@
   ],
   "workspace:goto-tab-3": [],
   "workspace:goto-tab-4": [],
-  "workspace:goto-tab-5": []
+  "workspace:goto-tab-5": [],
+  "Enhanced-editing:add-todoTime": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ]
 }
