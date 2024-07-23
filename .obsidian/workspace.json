@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "每日工作记录/2024/2024.07.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "每日工作记录/2024/2024.07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "每日工作记录/2024/2024.07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md"
+                "file": "每日工作记录/2024/2024.07.md"
               }
             }
           }
@@ -151,10 +151,11 @@
   },
   "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
+    "每日工作记录/2024/2024.06.md",
+    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
     "工作业务重点、难点/打包构建相关.md",
-    "每日工作记录/2024/2024.06.md",
     "工作笔记/汇报材料编写.md",
     "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
@@ -171,7 +172,6 @@
     "readme.md",
     "前端面试/浏览器.md",
     "工作业务重点、难点/弹幕.md",
-    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "额外编写文档/txv.core重构计划.md",
     "额外编写文档/2023线上问题复盘.md",
     "前端面试/js.md",
