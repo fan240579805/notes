@@ -67,8 +67,8 @@
   "Enhanced-editing:add-todoTime": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "T"
     }
