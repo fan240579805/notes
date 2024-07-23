@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作笔记/可以做的事（好答辩）.md",
+                "file": "工作笔记/未命名.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作笔记/可以做的事（好答辩）.md",
+                "file": "工作笔记/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作笔记/可以做的事（好答辩）.md",
+                "file": "工作笔记/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作笔记/可以做的事（好答辩）.md"
+                "file": "工作笔记/未命名.md"
               }
             }
           }
@@ -163,6 +163,8 @@
   },
   "active": "efa38e6d752d34fb",
   "lastOpenFiles": [
+    "工作笔记/可以做的事（好答辩）.md",
+    "工作笔记/未命名.md",
     "工作笔记/技术外.md",
     "额外编写文档/txv.core重构计划.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
@@ -186,7 +188,6 @@
     "pictures/union-login初步架构图.png",
     "pictures/Pasted image 20240531011416.png",
     "工作业务重点、难点/txv.core登陆架构.md",
-    "工作笔记/可以做的事（好答辩）.md",
     "工作业务重点、难点/打包构建相关.md",
     "pictures/登录请求回包body截图.png",
     "pictures/登录中转页发起登录请求回包截图.png",
@@ -200,7 +201,6 @@
     "前端面试/SSR.md",
     "pictures",
     "conflict-files-obsidian-git.md",
-    "前端面试/面试不会的题.md",
     "额外编写文档",
     "工作笔记",
     "工作业务重点、难点",
