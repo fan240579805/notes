@@ -9,5 +9,64 @@
       "key": "D"
     }
   ],
-  "Enhanced-editing:add-Line0": []
+  "Enhanced-editing:add-Line0": [],
+  "workspace:goto-tab-1": [],
+  "workspace:goto-tab-2": [],
+  "editor:set-heading-6": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "6"
+    }
+  ],
+  "workspace:goto-tab-6": [],
+  "Enhanced-editing:biaoti1-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "1"
+    }
+  ],
+  "Enhanced-editing:biaoti2-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "2"
+    }
+  ],
+  "Enhanced-editing:biaoti3-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "3"
+    }
+  ],
+  "Enhanced-editing:biaoti4-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "4"
+    }
+  ],
+  "Enhanced-editing:biaoti5-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "5"
+    }
+  ],
+  "Enhanced-editing:biaoti6-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "6"
+    }
+  ]
 }
