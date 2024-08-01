@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,7 +150,7 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "07f1298fde1dbe21",
+  "active": "a2593f000fcbeb43",
   "lastOpenFiles": [
     "每日工作记录/2024/2024.06.md",
     "工作业务重点、难点/大仓相关.md",
