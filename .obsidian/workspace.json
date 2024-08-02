@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日工作记录/2024/2024.07.md",
+                "file": "每日工作记录/2024/2024.08.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "每日工作记录/2024/2024.07.md",
+                "file": "每日工作记录/2024/2024.08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "每日工作记录/2024/2024.07.md",
+                "file": "每日工作记录/2024/2024.08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日工作记录/2024/2024.07.md"
+                "file": "每日工作记录/2024/2024.08.md"
               }
             }
           }
@@ -150,8 +149,10 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "a2593f000fcbeb43",
+  "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
+    "每日工作记录/2024/2024.07.md",
+    "每日工作记录/2024/2024.08.md",
     "每日工作记录/2024/2024.06.md",
     "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/打包构建相关.md",
@@ -164,7 +165,6 @@
     "前端面试/性能优化.md",
     "前端面试/状态码.md",
     "前端面试/js.md",
-    "每日工作记录/2024/2024.07.md",
     "pictures/new-login-class2.png",
     "pictures/登录中转页发起登录请求回包截图.png",
     "前端面试/面试不会的题.md",
@@ -186,7 +186,6 @@
     "pictures/同步cookie.png",
     "pictures/union-login初步架构图.png",
     "pictures/Pasted image 20240531011416.png",
-    "工作业务重点、难点/txv.core登陆架构.md",
     "pictures/登录请求回包body截图.png",
     "pictures/微信小程序确认登陆展示图.png",
     "pictures/小程序登录架构图2.png",
