@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "97441b8b8739a7f3",
+        "id": "cb7300c93fbfe6be",
         "type": "tabs",
         "children": [
           {
-            "id": "07f1298fde1dbe21",
+            "id": "73d6c3047ac21d44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "每日工作记录/2024/2024.08.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "每日工作记录/2024/2024.08.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,10 +141,10 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "07f1298fde1dbe21",
+  "active": "73d6c3047ac21d44",
   "lastOpenFiles": [
-    "每日工作记录/2024/2024.07.md",
     "每日工作记录/2024/2024.08.md",
+    "每日工作记录/2024/2024.07.md",
     "每日工作记录/2024/2024.06.md",
     "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/打包构建相关.md",
