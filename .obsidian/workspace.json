@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md",
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日工作记录/2024/2024.08.md"
+                "file": "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md"
               }
             }
           }
@@ -151,12 +151,12 @@
   },
   "active": "73d6c3047ac21d44",
   "lastOpenFiles": [
+    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "每日工作记录/2024/2024.08.md",
     "每日工作记录/2024/2024.07.md",
     "每日工作记录/2024/2024.06.md",
     "工作业务重点、难点/大仓相关.md",
     "工作业务重点、难点/打包构建相关.md",
-    "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
     "工作业务重点、难点/js灰度、版控.md",
