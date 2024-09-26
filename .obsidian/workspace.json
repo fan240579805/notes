@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fb2303acfd5806b1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +160,7 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "73d6c3047ac21d44",
+  "active": "fb2303acfd5806b1",
   "lastOpenFiles": [
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "每日工作记录/2024/2024.08.md",
