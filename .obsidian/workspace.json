@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "投资/例子.md",
+                "file": "旅行/衡阳之旅❤.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "投资/例子.md",
+                "file": "旅行/衡阳之旅❤.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "投资/例子.md",
+                "file": "旅行/衡阳之旅❤.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "投资/例子.md"
+                "file": "旅行/衡阳之旅❤.md"
               }
             }
           }
@@ -163,12 +163,13 @@
   },
   "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
+    "投资/例子.md",
+    "旅行/衡阳之旅❤.md",
     "投资/心得.md",
     "工作笔记/技术外.md",
     "conflict-files-obsidian-git.md",
     "旅行",
     "工作笔记/汇报材料编写.md",
-    "投资/例子.md",
     "readme.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "投资",
