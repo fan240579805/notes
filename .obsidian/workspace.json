@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
+                "file": "旅行/衡阳之旅❤.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
+                "file": "旅行/衡阳之旅❤.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
+                "file": "旅行/衡阳之旅❤.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md"
+                "file": "旅行/衡阳之旅❤.md"
               }
             }
           }
@@ -163,6 +163,9 @@
   },
   "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "pictures/Pasted image 20240929001017.png",
+    "pictures/Pasted image 20240929001012.png",
     "工作业务重点、难点/SEO.md",
     "工作笔记/技术外.md",
     "工作笔记/汇报材料编写.md",
@@ -198,10 +201,7 @@
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/V站性能优化.md",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/js灰度、版控.md",
-    "pictures/登录请求回包body截图.png",
-    "pictures/登录中转页发起登录请求回包截图.png",
     "登录完整流程解析.md",
     "pictures",
     "额外编写文档",

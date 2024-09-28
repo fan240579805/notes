@@ -5,16 +5,18 @@
 #### 两个重要的概念
 
 ##### 脱水（dehydrate）
-
 将组件树序列化成静态的 HTML 片段，能直接看到初始视图，不过已经无法与之交互了，但这种便携的形态尤其适合网络传输。这个脱去动态数据，成为风干标本一样的静态快照的过程被称为脱水（dehydrate）。
 
 ##### 注水（hydrate）
-
 与脱水相反，将这个 html 躯干复活为 Vue 应用的过程称为注水。客户端并不重新生成 HTML 组件，而是重用服务器发送给它的 HTML，并附加「数据」与「交互性」，构建成完整的 Vue 应用，这个过程被称为注水（hydrate）。
 
 > Hydration is a process where a frontend framework like React, VueJS re-uses the static HTML structure it receives from the server (that was created at server-side at build time), and instead of re-generating the HTML nodes on the browser, simply “breathes” event handlers and interactivity into it.
 
-##### 一、设计架构图
+![](../pictures/Pasted%20image%2020240929001017.png)
+
+##### viteSSR 的一些关键流程
+renderToString 后，
+#### 一、设计架构图
 
 ![[../pictures/design.png]]
 
