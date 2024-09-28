@@ -12,7 +12,7 @@
 
 > Hydration is a process where a frontend framework like React, VueJS re-uses the static HTML structure it receives from the server (that was created at server-side at build time), and instead of re-generating the HTML nodes on the browser, simply “breathes” event handlers and interactivity into it.
 
-![](../pictures/Pasted%20image%2020240929001017.png)
+![](../pictures/ssr流程图.png)
 
 ##### viteSSR 的一些关键流程
 renderToString 函数执行时，vue 组件的 created 和 onServerPrefetch 等生命周期或钩子会在服务端渲染执行，将数据塞到 pinia Store 树上。
@@ -32,7 +32,6 @@ onServerPrefetch 中请求页面片、服务端首屏需要的数据
 定时备份服务：本地存一份未注入 store 数据的 index.html，当服务端渲染超时或直出报错时直接返回该 html 给浏览器，进行 csr 兜底? （todo：暂时没在 vite-app2 看到定时逻辑，下次再看看）
 #### 二、vite-app2
 
-核心步骤，脱水和
 
 ##### Q&A
 
