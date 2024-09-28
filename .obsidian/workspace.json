@@ -11,11 +11,9 @@
             "id": "07f1298fde1dbe21",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "旅行/衡阳之旅❤.md",
-                "mode": "source",
-                "source": false
+                "file": "pictures/ssr流程图.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "旅行/衡阳之旅❤.md",
+                "file": "pictures/ssr流程图.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "旅行/衡阳之旅❤.md",
+                "file": "pictures/ssr流程图.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "旅行/衡阳之旅❤.md"
+                "file": "pictures/ssr流程图.png"
               }
             }
           }
@@ -151,18 +149,18 @@
   },
   "active": "07f1298fde1dbe21",
   "lastOpenFiles": [
+    "pictures/Pasted image 20240531011416.png",
+    "pictures/design.png",
+    "工作业务重点、难点/SSR相关实战 (V站官网).md",
+    "旅行/衡阳之旅❤.md",
     "投资/心得.md",
     "pictures/登录请求回包body截图.png",
     "pictures/登录中转页发起登录请求回包截图.png",
     "readme.md",
     "pictures/union-login初步架构图.png",
     "pictures/小程序登录架构图2.png",
-    "pictures/design.png",
     "pictures/new-login-class2.png",
-    "pictures/Pasted image 20240531011416.png",
     "pictures/ssr流程图.png",
-    "工作业务重点、难点/SSR相关实战 (V站官网).md",
-    "旅行/衡阳之旅❤.md",
     "工作业务重点、难点/V站性能优化.md",
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "pictures/Pasted image 20240929001017.png",
