@@ -2,6 +2,18 @@
 >SSR（Server-Side Rendering，服务器端渲染）和 SSG（Static Site Generation，静态站点生成）都是解决单页面应用（SPA）中 SEO 和首屏加载速度问题的方法。
 >[极速加载还是绝佳SEO？探索CSR、SSR、SSG等渲染模式的优劣对决 - 掘金](https://juejin.cn/post/7233699680490799162)
 
+#### 两个重要的概念
+
+##### 脱水（dehydrate）
+
+将组件树序列化成静态的 HTML 片段，能直接看到初始视图，不过已经无法与之交互了，但这种便携的形态尤其适合网络传输。这个脱去动态数据，成为风干标本一样的静态快照的过程被称为脱水（dehydrate）。
+
+##### 注水（hydrate）
+
+与脱水相反，将这个 html 躯干复活为 Vue 应用的过程称为注水。客户端并不重新生成 HTML 组件，而是重用服务器发送给它的 HTML，并附加「数据」与「交互性」，构建成完整的 Vue 应用，这个过程被称为注水（hydrate）。
+
+> Hydration is a process where a frontend framework like React, VueJS re-uses the static HTML structure it receives from the server (that was created at server-side at build time), and instead of re-generating the HTML nodes on the browser, simply “breathes” event handlers and interactivity into it.
+
 ##### 一、设计架构图
 
 ![[../pictures/design.png]]
@@ -17,7 +29,7 @@ onServerPrefetch 中请求页面片、服务端首屏需要的数据
 定时备份服务：本地存一份未注入 store 数据的 index.html，当服务端渲染超时或直出报错时直接返回该 html 给浏览器，进行 csr 兜底? （todo：暂时没在 vite-app2 看到定时逻辑，下次再看看）
 #### 二、vite-app2
 
-
+核心步骤，脱水和
 
 ##### Q&A
 
