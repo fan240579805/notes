@@ -15,7 +15,7 @@
 ![](../pictures/Pasted%20image%2020240929001017.png)
 
 ##### viteSSR 的一些关键流程
-renderToString 后，
+renderToString 函数执行时，vue 的 created 和 onServerPrefetch 钩子会执行，将数据塞到 pinia store 树上。所以 renderToString 后才能拿到 store 树的实例，将服务端的数据取出来
 #### 一、设计架构图
 
 ![[../pictures/design.png]]
