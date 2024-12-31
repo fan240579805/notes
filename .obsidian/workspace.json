@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "97441b8b8739a7f3",
+        "id": "79c85efd59b09095",
         "type": "tabs",
         "children": [
           {
-            "id": "07f1298fde1dbe21",
+            "id": "286a28ae3ed55447",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作笔记/可以做的事（好答辩）.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "可以做的事（好答辩）"
+              "title": "新标签页"
             }
           }
         ]
@@ -165,8 +161,9 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "07f1298fde1dbe21",
+  "active": "286a28ae3ed55447",
   "lastOpenFiles": [
+    "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
     "工作笔记/汇报材料编写.md",
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
@@ -177,7 +174,6 @@
     "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/SSR相关实战 (V站官网).md",
     "工作业务重点、难点/SEO.md",
-    "工作笔记/可以做的事（好答辩）.md",
     "每日工作记录/2024/2024.07.md",
     "每日工作记录/2024/2024.06.md",
     "工作业务重点、难点/V站性能优化.md",
