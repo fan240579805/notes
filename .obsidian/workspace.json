@@ -18,8 +18,21 @@
               "icon": "lucide-book-up",
               "title": "Release Notes 1.8.7"
             }
+          },
+          {
+            "id": "84cd3197cb674995",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,7 +177,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "286a28ae3ed55447",
+  "active": "84cd3197cb674995",
   "lastOpenFiles": [
     "工作笔记/可以做的事（好答辩）.md",
     "工作笔记/技术外.md",
