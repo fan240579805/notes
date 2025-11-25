@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "97441b8b8739a7f3",
+        "id": "f46c59ff0ee56f1f",
         "type": "tabs",
         "children": [
           {
-            "id": "07f1298fde1dbe21",
+            "id": "82ff8066567d0f54",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "txv.core登陆架构"
-            }
-          },
-          {
-            "id": "15f3c51cdb881c57",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.12"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,10 +165,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "15f3c51cdb881c57",
+  "active": "82ff8066567d0f54",
   "lastOpenFiles": [
-    "工作业务重点、难点/打包构建相关.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+    "工作业务重点、难点/打包构建相关.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
     "readme.md",
     "童梦资源汇总.md",
