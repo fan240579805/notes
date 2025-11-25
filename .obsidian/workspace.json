@@ -11,10 +11,14 @@
             "id": "82ff8066567d0f54",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "readme 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "readme 1"
             }
           }
         ]
@@ -167,6 +171,7 @@
   },
   "active": "82ff8066567d0f54",
   "lastOpenFiles": [
+    "readme 1.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/打包构建相关.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
