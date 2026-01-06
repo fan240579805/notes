@@ -11,12 +11,14 @@
             "id": "9f7bba8a56d34b28",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.10.6"
+                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.10.6"
+              "icon": "lucide-file",
+              "title": "txv.core登陆架构"
             }
           }
         ]
@@ -169,11 +171,12 @@
   },
   "active": "9f7bba8a56d34b28",
   "lastOpenFiles": [
+    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
+    "工作笔记/技术外.md",
+    "readme.md",
     "readme 1.md",
     "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/打包构建相关.md",
-    "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
-    "readme.md",
     "童梦资源汇总.md",
     "pictures/c0436937539dc375ac89ddc34ea8452.png",
     "pictures/ssr流程图.png",
@@ -191,7 +194,6 @@
     "工作业务重点、难点/登录组件/多端登录同一项目（uni）.md",
     "pictures/Pasted image 20240929001017.png",
     "工作业务重点、难点/SEO.md",
-    "工作笔记/技术外.md",
     "工作笔记/汇报材料编写.md",
     "额外编写文档/2023线上问题复盘.md",
     "工作笔记/可以做的事（好答辩）.md",
