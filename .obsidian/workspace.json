@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作业务重点、难点/登录组件/txv.core登陆架构.md",
+                "file": "工作业务重点、难点/SSR相关实战 (V站官网).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "txv.core登陆架构"
+              "title": "SSR相关实战 (V站官网)"
             }
           }
         ]
@@ -171,11 +171,12 @@
   },
   "active": "9f7bba8a56d34b28",
   "lastOpenFiles": [
+    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
+    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/登录组件/登陆组件迁移重构记录.md",
     "工作笔记/技术外.md",
     "readme.md",
     "readme 1.md",
-    "工作业务重点、难点/登录组件/txv.core登陆架构.md",
     "工作业务重点、难点/打包构建相关.md",
     "童梦资源汇总.md",
     "pictures/c0436937539dc375ac89ddc34ea8452.png",
@@ -209,7 +210,6 @@
     "工作业务重点、难点/大仓相关.md",
     "额外编写文档/txv.core重构计划.md",
     "工作业务重点、难点/登录组件",
-    "工作业务重点、难点/跨端开发 - hippy evo_vue.md",
     "工作业务重点、难点/txv.core登陆架构.md",
     "工作业务重点、难点/js灰度、版控.md",
     "pictures",
